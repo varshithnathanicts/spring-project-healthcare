@@ -1,0 +1,591 @@
+2025-06-04T16:05:19.002+05:30  INFO 28496 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Starting HospitalNotificationApplication using Java 21.0.6 with PID 28496 (C:\Project\hospital-notification5\target\classes started by 2406314 in C:\Project\hospital-notification5)
+2025-06-04T16:05:19.004+05:30 DEBUG 28496 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-04T16:05:19.004+05:30  INFO 28496 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T16:05:19.584+05:30  INFO 28496 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-04T16:05:19.635+05:30  INFO 28496 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2025-06-04T16:05:20.047+05:30  INFO 28496 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T16:05:20.064+05:30  INFO 28496 --- [hospital-notification] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T16:05:20.064+05:30  INFO 28496 --- [hospital-notification] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T16:05:20.112+05:30  INFO 28496 --- [hospital-notification] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T16:05:20.112+05:30  INFO 28496 --- [hospital-notification] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1059 ms
+2025-06-04T16:05:20.269+05:30  INFO 28496 --- [hospital-notification] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-04T16:05:20.336+05:30  INFO 28496 --- [hospital-notification] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-04T16:05:20.372+05:30  INFO 28496 --- [hospital-notification] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-04T16:05:20.698+05:30  INFO 28496 --- [hospital-notification] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-04T16:05:20.735+05:30  INFO 28496 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-04T16:05:20.930+05:30  INFO 28496 --- [hospital-notification] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-06-04T16:05:20.932+05:30  INFO 28496 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-04T16:05:20.959+05:30  WARN 28496 --- [hospital-notification] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-04T16:05:20.979+05:30  INFO 28496 --- [hospital-notification] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-04T16:05:21.806+05:30  INFO 28496 --- [hospital-notification] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-04T16:05:21.877+05:30  INFO 28496 --- [hospital-notification] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:05:22.087+05:30  INFO 28496 --- [hospital-notification] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-04T16:05:22.856+05:30  WARN 28496 --- [hospital-notification] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-04T16:05:23.064+05:30  INFO 28496 --- [hospital-notification] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-06-04T16:05:23.164+05:30  INFO 28496 --- [hospital-notification] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-04T16:05:23.223+05:30  INFO 28496 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T16:05:23.232+05:30  INFO 28496 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Started HospitalNotificationApplication in 4.572 seconds (process running for 5.243)
+2025-06-04T16:05:39.127+05:30  INFO 28496 --- [hospital-notification] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T16:05:39.128+05:30  INFO 28496 --- [hospital-notification] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T16:05:39.130+05:30  INFO 28496 --- [hospital-notification] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-04T16:05:44.636+05:30  INFO 28496 --- [hospital-notification] [http-nio-8080-exec-2] c.e.notification.service.EmailService    : Email sent to user1@gmail.com with subject 'Appointment Created'
+2025-06-04T16:05:49.128+05:30  INFO 28496 --- [hospital-notification] [http-nio-8080-exec-2] c.e.notification.service.EmailService    : Email sent to user11@gmail.com with subject 'Appointment Created'
+2025-06-04T16:05:50.031+05:30 ERROR 28496 --- [hospital-notification] [http-nio-8080-exec-2] c.e.n.service.TwilioSmsService           : Error sending SMS to +91987654321: Authenticate
+2025-06-04T16:05:50.322+05:30 ERROR 28496 --- [hospital-notification] [http-nio-8080-exec-2] c.e.n.service.TwilioSmsService           : Error sending SMS to +919876543211: Authenticate
+2025-06-04T16:11:37.677+05:30  INFO 28496 --- [hospital-notification] [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-04T16:11:37.680+05:30  INFO 28496 --- [hospital-notification] [RMI TCP Connection(16)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T16:11:37.686+05:30  INFO 28496 --- [hospital-notification] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T16:11:37.691+05:30  INFO 28496 --- [hospital-notification] [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:11:37.692+05:30  INFO 28496 --- [hospital-notification] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-04T16:11:37.694+05:30  INFO 28496 --- [hospital-notification] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-04T16:11:42.520+05:30  INFO 3012 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Starting HospitalNotificationApplication using Java 21.0.6 with PID 3012 (C:\Project\hospital-notification5\target\classes started by 2406314 in C:\Project\hospital-notification5)
+2025-06-04T16:11:42.522+05:30 DEBUG 3012 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-04T16:11:42.522+05:30  INFO 3012 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T16:11:43.281+05:30  INFO 3012 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-04T16:11:43.325+05:30  INFO 3012 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2025-06-04T16:11:43.728+05:30  INFO 3012 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T16:11:43.743+05:30  INFO 3012 --- [hospital-notification] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T16:11:43.743+05:30  INFO 3012 --- [hospital-notification] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T16:11:43.807+05:30  INFO 3012 --- [hospital-notification] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T16:11:43.807+05:30  INFO 3012 --- [hospital-notification] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1247 ms
+2025-06-04T16:11:43.961+05:30  INFO 3012 --- [hospital-notification] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-04T16:11:44.033+05:30  INFO 3012 --- [hospital-notification] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-04T16:11:44.073+05:30  INFO 3012 --- [hospital-notification] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-04T16:11:44.360+05:30  INFO 3012 --- [hospital-notification] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-04T16:11:44.393+05:30  INFO 3012 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-04T16:11:44.583+05:30  INFO 3012 --- [hospital-notification] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-06-04T16:11:44.585+05:30  INFO 3012 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-04T16:11:44.615+05:30  WARN 3012 --- [hospital-notification] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-04T16:11:44.636+05:30  INFO 3012 --- [hospital-notification] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-04T16:11:45.403+05:30  INFO 3012 --- [hospital-notification] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-04T16:11:45.473+05:30  INFO 3012 --- [hospital-notification] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:11:45.684+05:30  INFO 3012 --- [hospital-notification] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-04T16:11:46.477+05:30  WARN 3012 --- [hospital-notification] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-04T16:11:46.700+05:30  INFO 3012 --- [hospital-notification] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-06-04T16:11:46.792+05:30  INFO 3012 --- [hospital-notification] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-04T16:11:46.882+05:30  INFO 3012 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T16:11:46.892+05:30  INFO 3012 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Started HospitalNotificationApplication in 4.75 seconds (process running for 5.861)
+2025-06-04T16:11:55.172+05:30  INFO 3012 --- [hospital-notification] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T16:11:55.172+05:30  INFO 3012 --- [hospital-notification] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T16:11:55.173+05:30  INFO 3012 --- [hospital-notification] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-04T16:12:00.371+05:30  INFO 3012 --- [hospital-notification] [http-nio-8080-exec-1] c.e.notification.service.EmailService    : Email sent to user1@gmail.com with subject 'Appointment Created'
+2025-06-04T16:12:04.847+05:30  INFO 3012 --- [hospital-notification] [http-nio-8080-exec-1] c.e.notification.service.EmailService    : Email sent to user11@gmail.com with subject 'Appointment Created'
+2025-06-04T16:12:05.687+05:30 ERROR 3012 --- [hospital-notification] [http-nio-8080-exec-1] c.e.n.service.TwilioSmsService           : Error sending SMS to +91987654321: Authenticate
+2025-06-04T16:12:05.962+05:30 ERROR 3012 --- [hospital-notification] [http-nio-8080-exec-1] c.e.n.service.TwilioSmsService           : Error sending SMS to +919876543211: Authenticate
+2025-06-04T16:16:06.644+05:30  INFO 28556 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Starting HospitalNotificationApplication using Java 21.0.6 with PID 28556 (C:\Project\hospital-notification5\target\classes started by 2406314 in C:\Project\hospital-notification5)
+2025-06-04T16:16:06.646+05:30 DEBUG 28556 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-04T16:16:06.646+05:30  INFO 28556 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T16:16:07.198+05:30  INFO 28556 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-04T16:16:07.248+05:30  INFO 28556 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2025-06-04T16:16:07.712+05:30  INFO 28556 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T16:16:07.728+05:30  INFO 28556 --- [hospital-notification] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T16:16:07.728+05:30  INFO 28556 --- [hospital-notification] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T16:16:07.792+05:30  INFO 28556 --- [hospital-notification] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T16:16:07.792+05:30  INFO 28556 --- [hospital-notification] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1107 ms
+2025-06-04T16:16:07.945+05:30  INFO 28556 --- [hospital-notification] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-04T16:16:08.018+05:30  INFO 28556 --- [hospital-notification] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-04T16:16:08.067+05:30  INFO 28556 --- [hospital-notification] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-04T16:16:08.374+05:30  INFO 28556 --- [hospital-notification] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-04T16:16:08.410+05:30  INFO 28556 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-04T16:16:08.619+05:30  INFO 28556 --- [hospital-notification] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-06-04T16:16:08.622+05:30  INFO 28556 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-04T16:16:08.654+05:30  WARN 28556 --- [hospital-notification] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-04T16:16:08.677+05:30  INFO 28556 --- [hospital-notification] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-04T16:16:09.455+05:30  INFO 28556 --- [hospital-notification] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-04T16:16:09.521+05:30  INFO 28556 --- [hospital-notification] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:16:09.789+05:30  INFO 28556 --- [hospital-notification] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-04T16:16:10.733+05:30  WARN 28556 --- [hospital-notification] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-04T16:16:10.977+05:30  INFO 28556 --- [hospital-notification] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-06-04T16:16:11.084+05:30  INFO 28556 --- [hospital-notification] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-04T16:16:11.127+05:30  WARN 28556 --- [hospital-notification] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-06-04T16:16:11.128+05:30  INFO 28556 --- [hospital-notification] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:16:11.132+05:30  INFO 28556 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-04T16:16:11.135+05:30  INFO 28556 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-04T16:16:11.148+05:30  INFO 28556 --- [hospital-notification] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-04T16:16:11.173+05:30 ERROR 28556 --- [hospital-notification] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-06-04T16:16:14.509+05:30  INFO 3012 --- [hospital-notification] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-04T16:16:14.512+05:30  INFO 3012 --- [hospital-notification] [RMI TCP Connection(15)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T16:16:14.517+05:30  INFO 3012 --- [hospital-notification] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T16:16:14.520+05:30  INFO 3012 --- [hospital-notification] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:16:14.522+05:30  INFO 3012 --- [hospital-notification] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-04T16:16:14.524+05:30  INFO 3012 --- [hospital-notification] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-04T16:16:22.724+05:30  INFO 24516 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Starting HospitalNotificationApplication using Java 21.0.6 with PID 24516 (C:\Project\hospital-notification5\target\classes started by 2406314 in C:\Project\hospital-notification5)
+2025-06-04T16:16:22.726+05:30 DEBUG 24516 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-04T16:16:22.726+05:30  INFO 24516 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T16:16:23.275+05:30  INFO 24516 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-04T16:16:23.324+05:30  INFO 24516 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2025-06-04T16:16:23.766+05:30  INFO 24516 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T16:16:23.778+05:30  INFO 24516 --- [hospital-notification] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T16:16:23.778+05:30  INFO 24516 --- [hospital-notification] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T16:16:23.823+05:30  INFO 24516 --- [hospital-notification] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T16:16:23.824+05:30  INFO 24516 --- [hospital-notification] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1056 ms
+2025-06-04T16:16:23.982+05:30  INFO 24516 --- [hospital-notification] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-04T16:16:24.046+05:30  INFO 24516 --- [hospital-notification] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-04T16:16:24.083+05:30  INFO 24516 --- [hospital-notification] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-04T16:16:24.364+05:30  INFO 24516 --- [hospital-notification] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-04T16:16:24.399+05:30  INFO 24516 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-04T16:16:24.605+05:30  INFO 24516 --- [hospital-notification] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-06-04T16:16:24.607+05:30  INFO 24516 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-04T16:16:24.631+05:30  WARN 24516 --- [hospital-notification] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-04T16:16:24.652+05:30  INFO 24516 --- [hospital-notification] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-04T16:16:25.415+05:30  INFO 24516 --- [hospital-notification] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-04T16:16:25.486+05:30  INFO 24516 --- [hospital-notification] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:16:25.757+05:30  INFO 24516 --- [hospital-notification] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-04T16:16:26.541+05:30  WARN 24516 --- [hospital-notification] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-04T16:16:26.770+05:30  INFO 24516 --- [hospital-notification] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-06-04T16:16:26.859+05:30  INFO 24516 --- [hospital-notification] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-04T16:16:26.919+05:30  INFO 24516 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T16:16:26.928+05:30  INFO 24516 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Started HospitalNotificationApplication in 4.603 seconds (process running for 5.149)
+2025-06-04T16:16:26.935+05:30  INFO 24516 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Running hourly reminder job...
+2025-06-04T16:16:26.935+05:30 DEBUG 24516 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Fetching appointments between Wed Jun 04 16:16:26 IST 2025 and Wed Jun 04 17:16:26 IST 2025
+2025-06-04T16:16:27.019+05:30  INFO 24516 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Reminder job completed. Total reminders sent: 0
+2025-06-04T16:16:55.690+05:30  INFO 24516 --- [hospital-notification] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T16:16:55.691+05:30  INFO 24516 --- [hospital-notification] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T16:16:55.692+05:30  INFO 24516 --- [hospital-notification] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-04T16:17:00.951+05:30  INFO 24516 --- [hospital-notification] [http-nio-8080-exec-2] c.e.notification.service.EmailService    : Email sent to user1@gmail.com with subject 'Appointment Created'
+2025-06-04T16:17:05.660+05:30  INFO 24516 --- [hospital-notification] [http-nio-8080-exec-2] c.e.notification.service.EmailService    : Email sent to user11@gmail.com with subject 'Appointment Created'
+2025-06-04T16:17:06.899+05:30 ERROR 24516 --- [hospital-notification] [http-nio-8080-exec-2] c.e.n.service.TwilioSmsService           : Error sending SMS to +91987654321: Authenticate
+2025-06-04T16:17:07.611+05:30 ERROR 24516 --- [hospital-notification] [http-nio-8080-exec-2] c.e.n.service.TwilioSmsService           : Error sending SMS to +919876543211: Authenticate
+2025-06-04T16:24:14.141+05:30  INFO 24516 --- [hospital-notification] [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-04T16:24:14.145+05:30  INFO 24516 --- [hospital-notification] [RMI TCP Connection(17)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T16:24:14.150+05:30  INFO 24516 --- [hospital-notification] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T16:24:14.153+05:30  INFO 24516 --- [hospital-notification] [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:24:14.154+05:30  INFO 24516 --- [hospital-notification] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-04T16:24:14.157+05:30  INFO 24516 --- [hospital-notification] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-04T16:24:19.179+05:30  INFO 10512 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Starting HospitalNotificationApplication using Java 21.0.6 with PID 10512 (C:\Project\hospital-notification5\target\classes started by 2406314 in C:\Project\hospital-notification5)
+2025-06-04T16:24:19.181+05:30 DEBUG 10512 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-04T16:24:19.182+05:30  INFO 10512 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T16:24:19.809+05:30  INFO 10512 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-04T16:24:19.859+05:30  INFO 10512 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2025-06-04T16:24:20.295+05:30  INFO 10512 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T16:24:20.310+05:30  INFO 10512 --- [hospital-notification] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T16:24:20.311+05:30  INFO 10512 --- [hospital-notification] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T16:24:20.372+05:30  INFO 10512 --- [hospital-notification] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T16:24:20.372+05:30  INFO 10512 --- [hospital-notification] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1147 ms
+2025-06-04T16:24:20.530+05:30  INFO 10512 --- [hospital-notification] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-04T16:24:20.600+05:30  INFO 10512 --- [hospital-notification] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-04T16:24:20.639+05:30  INFO 10512 --- [hospital-notification] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-04T16:24:20.959+05:30  INFO 10512 --- [hospital-notification] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-04T16:24:20.994+05:30  INFO 10512 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-04T16:24:21.177+05:30  INFO 10512 --- [hospital-notification] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-06-04T16:24:21.179+05:30  INFO 10512 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-04T16:24:21.210+05:30  WARN 10512 --- [hospital-notification] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-04T16:24:21.229+05:30  INFO 10512 --- [hospital-notification] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-04T16:24:21.966+05:30  INFO 10512 --- [hospital-notification] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-04T16:24:22.030+05:30  INFO 10512 --- [hospital-notification] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:24:22.228+05:30  INFO 10512 --- [hospital-notification] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-04T16:24:23.050+05:30  WARN 10512 --- [hospital-notification] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-04T16:24:23.262+05:30  INFO 10512 --- [hospital-notification] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-06-04T16:24:23.345+05:30  INFO 10512 --- [hospital-notification] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-04T16:24:23.396+05:30  INFO 10512 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T16:24:23.405+05:30  INFO 10512 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Started HospitalNotificationApplication in 4.646 seconds (process running for 5.2)
+2025-06-04T16:25:00.743+05:30  INFO 10512 --- [hospital-notification] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-04T16:25:00.745+05:30  INFO 10512 --- [hospital-notification] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T16:25:00.755+05:30  INFO 10512 --- [hospital-notification] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T16:25:00.758+05:30  INFO 10512 --- [hospital-notification] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:25:00.760+05:30  INFO 10512 --- [hospital-notification] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-04T16:25:00.763+05:30  INFO 10512 --- [hospital-notification] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-04T16:25:05.660+05:30  INFO 23712 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Starting HospitalNotificationApplication using Java 21.0.6 with PID 23712 (C:\Project\hospital-notification5\target\classes started by 2406314 in C:\Project\hospital-notification5)
+2025-06-04T16:25:05.662+05:30 DEBUG 23712 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-04T16:25:05.663+05:30  INFO 23712 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T16:25:06.594+05:30  INFO 23712 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-04T16:25:06.647+05:30  INFO 23712 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2025-06-04T16:25:07.105+05:30  INFO 23712 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T16:25:07.114+05:30  INFO 23712 --- [hospital-notification] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T16:25:07.115+05:30  INFO 23712 --- [hospital-notification] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T16:25:07.161+05:30  INFO 23712 --- [hospital-notification] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T16:25:07.161+05:30  INFO 23712 --- [hospital-notification] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1452 ms
+2025-06-04T16:25:07.296+05:30  INFO 23712 --- [hospital-notification] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-04T16:25:07.336+05:30  INFO 23712 --- [hospital-notification] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-04T16:25:07.360+05:30  INFO 23712 --- [hospital-notification] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-04T16:25:07.604+05:30  INFO 23712 --- [hospital-notification] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-04T16:25:07.627+05:30  INFO 23712 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-04T16:25:07.772+05:30  INFO 23712 --- [hospital-notification] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-06-04T16:25:07.775+05:30  INFO 23712 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-04T16:25:07.794+05:30  WARN 23712 --- [hospital-notification] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-04T16:25:07.811+05:30  INFO 23712 --- [hospital-notification] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-04T16:25:08.446+05:30  INFO 23712 --- [hospital-notification] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-04T16:25:08.502+05:30  INFO 23712 --- [hospital-notification] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:25:08.702+05:30  INFO 23712 --- [hospital-notification] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-04T16:25:09.517+05:30  WARN 23712 --- [hospital-notification] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-04T16:25:09.744+05:30  INFO 23712 --- [hospital-notification] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-06-04T16:25:09.831+05:30  INFO 23712 --- [hospital-notification] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-04T16:25:09.879+05:30  INFO 23712 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T16:25:09.888+05:30  INFO 23712 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Started HospitalNotificationApplication in 4.634 seconds (process running for 5.206)
+2025-06-04T16:25:29.982+05:30  INFO 23712 --- [hospital-notification] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T16:25:29.982+05:30  INFO 23712 --- [hospital-notification] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T16:25:29.983+05:30  INFO 23712 --- [hospital-notification] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-04T16:25:35.102+05:30  INFO 23712 --- [hospital-notification] [http-nio-8080-exec-5] c.e.notification.service.EmailService    : Email sent to user1@gmail.com with subject 'Appointment Created'
+2025-06-04T16:25:39.819+05:30  INFO 23712 --- [hospital-notification] [http-nio-8080-exec-5] c.e.notification.service.EmailService    : Email sent to user11@gmail.com with subject 'Appointment Created'
+2025-06-04T16:25:40.649+05:30 ERROR 23712 --- [hospital-notification] [http-nio-8080-exec-5] c.e.n.service.TwilioSmsService           : Error sending SMS to +91987654321: Authenticate
+2025-06-04T16:25:41.341+05:30 ERROR 23712 --- [hospital-notification] [http-nio-8080-exec-5] c.e.n.service.TwilioSmsService           : Error sending SMS to +919876543211: Authenticate
+2025-06-04T16:30:00.029+05:30  INFO 23712 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Running daily reminder job...
+2025-06-04T16:30:00.030+05:30 DEBUG 23712 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Fetching appointments for date: Thu Jun 05 16:30:00 IST 2025
+2025-06-04T16:30:00.138+05:30  INFO 23712 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Sending reminder for appointment ID: 1
+2025-06-04T16:30:04.858+05:30  INFO 23712 --- [hospital-notification] [scheduling-1] c.e.notification.service.EmailService    : Email sent to user1@gmail.com with subject 'Appointment Reminder'
+2025-06-04T16:30:10.477+05:30  INFO 23712 --- [hospital-notification] [scheduling-1] c.e.notification.service.EmailService    : Email sent to user11@gmail.com with subject 'Appointment Reminder'
+2025-06-04T16:30:11.008+05:30 ERROR 23712 --- [hospital-notification] [scheduling-1] c.e.n.service.TwilioSmsService           : Error sending SMS to +91987654321: Authenticate
+2025-06-04T16:30:11.705+05:30 ERROR 23712 --- [hospital-notification] [scheduling-1] c.e.n.service.TwilioSmsService           : Error sending SMS to +919876543211: Authenticate
+2025-06-04T16:30:11.705+05:30  INFO 23712 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Reminder job completed. Total reminders sent: 2
+2025-06-04T16:32:21.492+05:30  INFO 23712 --- [hospital-notification] [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-04T16:32:21.496+05:30  INFO 23712 --- [hospital-notification] [RMI TCP Connection(17)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T16:32:21.504+05:30  INFO 23712 --- [hospital-notification] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T16:32:21.508+05:30  INFO 23712 --- [hospital-notification] [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:32:21.511+05:30  INFO 23712 --- [hospital-notification] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-04T16:32:21.514+05:30  INFO 23712 --- [hospital-notification] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-04T16:34:23.870+05:30  INFO 13440 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Starting HospitalNotificationApplication using Java 21.0.6 with PID 13440 (C:\Project\hospital-notification5\target\classes started by 2406314 in C:\Project\hospital-notification5)
+2025-06-04T16:34:23.872+05:30 DEBUG 13440 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-04T16:34:23.873+05:30  INFO 13440 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T16:34:24.412+05:30  INFO 13440 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-04T16:34:24.460+05:30  INFO 13440 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2025-06-04T16:34:24.877+05:30  INFO 13440 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T16:34:24.890+05:30  INFO 13440 --- [hospital-notification] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T16:34:24.891+05:30  INFO 13440 --- [hospital-notification] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T16:34:24.947+05:30  INFO 13440 --- [hospital-notification] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T16:34:24.947+05:30  INFO 13440 --- [hospital-notification] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1041 ms
+2025-06-04T16:34:25.104+05:30  INFO 13440 --- [hospital-notification] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-04T16:34:25.168+05:30  INFO 13440 --- [hospital-notification] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-04T16:34:25.206+05:30  INFO 13440 --- [hospital-notification] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-04T16:34:25.481+05:30  INFO 13440 --- [hospital-notification] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-04T16:34:25.514+05:30  INFO 13440 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-04T16:34:25.699+05:30  INFO 13440 --- [hospital-notification] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-06-04T16:34:25.702+05:30  INFO 13440 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-04T16:34:25.732+05:30  WARN 13440 --- [hospital-notification] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-04T16:34:25.753+05:30  INFO 13440 --- [hospital-notification] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-04T16:34:26.506+05:30  INFO 13440 --- [hospital-notification] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-04T16:34:26.578+05:30  INFO 13440 --- [hospital-notification] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:34:26.778+05:30  INFO 13440 --- [hospital-notification] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-04T16:34:27.569+05:30  WARN 13440 --- [hospital-notification] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-04T16:34:27.769+05:30  INFO 13440 --- [hospital-notification] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-06-04T16:34:27.856+05:30  INFO 13440 --- [hospital-notification] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-04T16:34:27.934+05:30  INFO 13440 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T16:34:27.944+05:30  INFO 13440 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Started HospitalNotificationApplication in 4.41 seconds (process running for 5.399)
+2025-06-04T16:34:27.950+05:30  INFO 13440 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Running hourly reminder job...
+2025-06-04T16:34:27.950+05:30 DEBUG 13440 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Fetching appointments between Wed Jun 04 16:34:27 IST 2025 and Wed Jun 04 17:34:27 IST 2025
+2025-06-04T16:34:28.024+05:30  INFO 13440 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Reminder job completed. Total reminders sent: 0
+2025-06-04T16:34:36.490+05:30  INFO 13440 --- [hospital-notification] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T16:34:36.491+05:30  INFO 13440 --- [hospital-notification] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T16:34:36.492+05:30  INFO 13440 --- [hospital-notification] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-04T16:34:41.696+05:30  INFO 13440 --- [hospital-notification] [http-nio-8080-exec-1] c.e.notification.service.EmailService    : Email sent to user1@gmail.com with subject 'Appointment Created'
+2025-06-04T16:34:46.285+05:30  INFO 13440 --- [hospital-notification] [http-nio-8080-exec-1] c.e.notification.service.EmailService    : Email sent to user11@gmail.com with subject 'Appointment Created'
+2025-06-04T16:34:47.029+05:30 ERROR 13440 --- [hospital-notification] [http-nio-8080-exec-1] c.e.n.service.TwilioSmsService           : Error sending SMS to +91987654321: Authenticate
+2025-06-04T16:34:47.713+05:30 ERROR 13440 --- [hospital-notification] [http-nio-8080-exec-1] c.e.n.service.TwilioSmsService           : Error sending SMS to +919876543211: Authenticate
+2025-06-04T16:36:27.374+05:30  WARN 13440 --- [hospital-notification] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2025-06-04T16:36:35.884+05:30  INFO 13440 --- [hospital-notification] [http-nio-8080-exec-7] c.e.notification.service.EmailService    : Email sent to user1@gmail.com with subject 'Appointment Modified'
+2025-06-04T16:36:40.815+05:30  INFO 13440 --- [hospital-notification] [http-nio-8080-exec-7] c.e.notification.service.EmailService    : Email sent to user11@gmail.com with subject 'Appointment Modified'
+2025-06-04T16:36:41.095+05:30 ERROR 13440 --- [hospital-notification] [http-nio-8080-exec-7] c.e.n.service.TwilioSmsService           : Error sending SMS to +91987654321: Authenticate
+2025-06-04T16:36:41.821+05:30 ERROR 13440 --- [hospital-notification] [http-nio-8080-exec-7] c.e.n.service.TwilioSmsService           : Error sending SMS to +919876543211: Authenticate
+2025-06-04T16:38:53.679+05:30  INFO 13440 --- [hospital-notification] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-04T16:38:53.684+05:30  INFO 13440 --- [hospital-notification] [RMI TCP Connection(15)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T16:38:53.689+05:30  INFO 13440 --- [hospital-notification] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T16:38:53.693+05:30  INFO 13440 --- [hospital-notification] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:38:53.695+05:30  INFO 13440 --- [hospital-notification] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-04T16:38:53.698+05:30  INFO 13440 --- [hospital-notification] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-04T16:41:13.396+05:30  INFO 28552 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Starting HospitalNotificationApplication using Java 21.0.6 with PID 28552 (C:\Project\hospital-notification5\target\classes started by 2406314 in C:\Project\hospital-notification5)
+2025-06-04T16:41:13.398+05:30 DEBUG 28552 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-04T16:41:13.398+05:30  INFO 28552 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T16:41:14.070+05:30  INFO 28552 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-04T16:41:14.128+05:30  INFO 28552 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2025-06-04T16:41:14.520+05:30  INFO 28552 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T16:41:14.533+05:30  INFO 28552 --- [hospital-notification] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T16:41:14.533+05:30  INFO 28552 --- [hospital-notification] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T16:41:14.580+05:30  INFO 28552 --- [hospital-notification] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T16:41:14.581+05:30  INFO 28552 --- [hospital-notification] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1144 ms
+2025-06-04T16:41:14.718+05:30  INFO 28552 --- [hospital-notification] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-04T16:41:14.757+05:30  INFO 28552 --- [hospital-notification] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-04T16:41:14.781+05:30  INFO 28552 --- [hospital-notification] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-04T16:41:15.017+05:30  INFO 28552 --- [hospital-notification] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-04T16:41:15.043+05:30  INFO 28552 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-04T16:41:15.193+05:30  INFO 28552 --- [hospital-notification] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-06-04T16:41:15.194+05:30  INFO 28552 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-04T16:41:15.214+05:30  WARN 28552 --- [hospital-notification] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-04T16:41:15.231+05:30  INFO 28552 --- [hospital-notification] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-04T16:41:15.874+05:30  INFO 28552 --- [hospital-notification] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-04T16:41:15.937+05:30  INFO 28552 --- [hospital-notification] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:41:16.138+05:30  INFO 28552 --- [hospital-notification] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-04T16:41:16.900+05:30  WARN 28552 --- [hospital-notification] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-04T16:41:17.119+05:30  INFO 28552 --- [hospital-notification] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-06-04T16:41:17.210+05:30  INFO 28552 --- [hospital-notification] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-04T16:41:17.288+05:30  INFO 28552 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T16:41:17.302+05:30  INFO 28552 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Started HospitalNotificationApplication in 4.275 seconds (process running for 5.3)
+2025-06-04T16:41:17.307+05:30  INFO 28552 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Running hourly reminder job...
+2025-06-04T16:41:17.307+05:30 DEBUG 28552 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Fetching appointments between Wed Jun 04 16:41:17 IST 2025 and Wed Jun 04 17:41:17 IST 2025
+2025-06-04T16:41:17.387+05:30  INFO 28552 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Reminder job completed. Total reminders sent: 0
+2025-06-04T16:42:12.919+05:30  INFO 28552 --- [hospital-notification] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T16:42:12.919+05:30  INFO 28552 --- [hospital-notification] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T16:42:12.921+05:30  INFO 28552 --- [hospital-notification] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-04T16:42:13.135+05:30 ERROR 28552 --- [hospital-notification] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Error creating appointment: The given id must not be null] with root cause
+
+java.lang.RuntimeException: Error creating appointment: The given id must not be null
+	at com.example.notification.service.AppointmentService.createAppointment(AppointmentService.java:46) ~[classes/:na]
+	at com.example.notification.controller.AppointmentController.create(AppointmentController.java:19) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-06-04T16:51:17.309+05:30  INFO 28552 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Running hourly reminder job...
+2025-06-04T16:51:17.310+05:30 DEBUG 28552 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Fetching appointments between Wed Jun 04 16:51:17 IST 2025 and Wed Jun 04 17:51:17 IST 2025
+2025-06-04T16:51:17.314+05:30  INFO 28552 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Reminder job completed. Total reminders sent: 0
+2025-06-04T16:53:25.860+05:30  INFO 28552 --- [hospital-notification] [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-04T16:53:25.863+05:30  INFO 28552 --- [hospital-notification] [RMI TCP Connection(20)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T16:53:25.873+05:30  INFO 28552 --- [hospital-notification] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T16:53:25.878+05:30  INFO 28552 --- [hospital-notification] [RMI TCP Connection(20)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:53:25.880+05:30  INFO 28552 --- [hospital-notification] [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-04T16:53:25.883+05:30  INFO 28552 --- [hospital-notification] [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-04T16:53:35.631+05:30  INFO 2252 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Starting HospitalNotificationApplication using Java 21.0.6 with PID 2252 (C:\Project\hospital-notification5\target\classes started by 2406314 in C:\Project\hospital-notification5)
+2025-06-04T16:53:35.633+05:30 DEBUG 2252 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-04T16:53:35.634+05:30  INFO 2252 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T16:53:36.466+05:30  INFO 2252 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-04T16:53:36.526+05:30  INFO 2252 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2025-06-04T16:53:36.994+05:30  INFO 2252 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T16:53:37.005+05:30  INFO 2252 --- [hospital-notification] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T16:53:37.006+05:30  INFO 2252 --- [hospital-notification] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T16:53:37.054+05:30  INFO 2252 --- [hospital-notification] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T16:53:37.054+05:30  INFO 2252 --- [hospital-notification] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1372 ms
+2025-06-04T16:53:37.193+05:30  INFO 2252 --- [hospital-notification] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-04T16:53:37.231+05:30  INFO 2252 --- [hospital-notification] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-04T16:53:37.256+05:30  INFO 2252 --- [hospital-notification] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-04T16:53:37.506+05:30  INFO 2252 --- [hospital-notification] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-04T16:53:37.530+05:30  INFO 2252 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-04T16:53:37.681+05:30  INFO 2252 --- [hospital-notification] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-06-04T16:53:37.683+05:30  INFO 2252 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-04T16:53:37.710+05:30  WARN 2252 --- [hospital-notification] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-04T16:53:37.729+05:30  INFO 2252 --- [hospital-notification] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-04T16:53:39.051+05:30  INFO 2252 --- [hospital-notification] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-04T16:53:39.125+05:30  INFO 2252 --- [hospital-notification] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:53:39.366+05:30  INFO 2252 --- [hospital-notification] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-04T16:53:40.436+05:30  WARN 2252 --- [hospital-notification] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-04T16:53:40.667+05:30  INFO 2252 --- [hospital-notification] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-06-04T16:53:40.750+05:30  INFO 2252 --- [hospital-notification] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-04T16:53:40.830+05:30  INFO 2252 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T16:53:40.846+05:30  INFO 2252 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Started HospitalNotificationApplication in 5.611 seconds (process running for 6.668)
+2025-06-04T16:53:40.857+05:30  INFO 2252 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Running hourly reminder job...
+2025-06-04T16:53:40.857+05:30 DEBUG 2252 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Fetching appointments between Wed Jun 04 16:53:40 IST 2025 and Wed Jun 04 17:53:40 IST 2025
+2025-06-04T16:53:40.935+05:30  INFO 2252 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Reminder job completed. Total reminders sent: 0
+2025-06-04T16:53:47.214+05:30  INFO 2252 --- [hospital-notification] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T16:53:47.214+05:30  INFO 2252 --- [hospital-notification] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T16:53:47.215+05:30  INFO 2252 --- [hospital-notification] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-04T16:53:47.328+05:30 ERROR 2252 --- [hospital-notification] [http-nio-8080-exec-1] c.e.n.service.AppointmentService         : Error creating appointment: The given id must not be null
+2025-06-04T16:54:00.518+05:30 ERROR 2252 --- [hospital-notification] [http-nio-8080-exec-4] c.e.n.service.AppointmentService         : Error creating appointment: The given id must not be null
+2025-06-04T16:59:52.832+05:30  INFO 2252 --- [hospital-notification] [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-04T16:59:52.835+05:30  INFO 2252 --- [hospital-notification] [RMI TCP Connection(16)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T16:59:52.846+05:30  INFO 2252 --- [hospital-notification] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T16:59:52.850+05:30  INFO 2252 --- [hospital-notification] [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T16:59:52.852+05:30  INFO 2252 --- [hospital-notification] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-04T16:59:52.855+05:30  INFO 2252 --- [hospital-notification] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-04T17:00:03.422+05:30  INFO 21348 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Starting HospitalNotificationApplication using Java 21.0.6 with PID 21348 (C:\Project\hospital-notification5\target\classes started by 2406314 in C:\Project\hospital-notification5)
+2025-06-04T17:00:03.424+05:30 DEBUG 21348 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-04T17:00:03.424+05:30  INFO 21348 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T17:00:04.083+05:30  INFO 21348 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-04T17:00:04.198+05:30  INFO 21348 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+2025-06-04T17:00:04.720+05:30  INFO 21348 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T17:00:04.732+05:30  INFO 21348 --- [hospital-notification] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T17:00:04.732+05:30  INFO 21348 --- [hospital-notification] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T17:00:04.791+05:30  INFO 21348 --- [hospital-notification] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T17:00:04.792+05:30  INFO 21348 --- [hospital-notification] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1318 ms
+2025-06-04T17:00:04.945+05:30  INFO 21348 --- [hospital-notification] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-04T17:00:05.013+05:30  INFO 21348 --- [hospital-notification] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-04T17:00:05.054+05:30  INFO 21348 --- [hospital-notification] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-04T17:00:05.385+05:30  INFO 21348 --- [hospital-notification] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-04T17:00:05.427+05:30  INFO 21348 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-04T17:00:05.612+05:30  INFO 21348 --- [hospital-notification] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-06-04T17:00:05.614+05:30  INFO 21348 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-04T17:00:05.645+05:30  WARN 21348 --- [hospital-notification] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-04T17:00:05.666+05:30  INFO 21348 --- [hospital-notification] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-04T17:00:06.451+05:30  INFO 21348 --- [hospital-notification] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-04T17:00:06.540+05:30  INFO 21348 --- [hospital-notification] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T17:00:06.738+05:30  INFO 21348 --- [hospital-notification] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-04T17:00:07.517+05:30  WARN 21348 --- [hospital-notification] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-04T17:00:07.718+05:30  INFO 21348 --- [hospital-notification] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-06-04T17:00:07.805+05:30  INFO 21348 --- [hospital-notification] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-04T17:00:07.859+05:30  INFO 21348 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T17:00:07.869+05:30  INFO 21348 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Started HospitalNotificationApplication in 4.89 seconds (process running for 5.526)
+2025-06-04T17:00:07.875+05:30  INFO 21348 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Running hourly reminder job...
+2025-06-04T17:00:07.875+05:30 DEBUG 21348 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Fetching appointments between Wed Jun 04 17:00:07 IST 2025 and Wed Jun 04 18:00:07 IST 2025
+2025-06-04T17:00:07.955+05:30  INFO 21348 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Reminder job completed. Total reminders sent: 0
+2025-06-04T17:00:14.730+05:30  INFO 21348 --- [hospital-notification] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T17:00:14.730+05:30  INFO 21348 --- [hospital-notification] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T17:00:14.733+05:30  INFO 21348 --- [hospital-notification] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-04T17:02:21.057+05:30  INFO 21348 --- [hospital-notification] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-04T17:02:21.059+05:30  INFO 21348 --- [hospital-notification] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T17:02:21.068+05:30  INFO 21348 --- [hospital-notification] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T17:02:21.072+05:30  INFO 21348 --- [hospital-notification] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T17:02:21.073+05:30  INFO 21348 --- [hospital-notification] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-04T17:02:21.076+05:30  INFO 21348 --- [hospital-notification] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-04T17:02:30.912+05:30  INFO 11280 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Starting HospitalNotificationApplication using Java 21.0.6 with PID 11280 (C:\Project\hospital-notification5\target\classes started by 2406314 in C:\Project\hospital-notification5)
+2025-06-04T17:02:30.913+05:30 DEBUG 11280 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-04T17:02:30.914+05:30  INFO 11280 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-06-04T17:02:31.475+05:30  INFO 11280 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-04T17:02:31.520+05:30  INFO 11280 --- [hospital-notification] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2025-06-04T17:02:32.000+05:30  INFO 11280 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-04T17:02:32.013+05:30  INFO 11280 --- [hospital-notification] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-04T17:02:32.014+05:30  INFO 11280 --- [hospital-notification] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-04T17:02:32.085+05:30  INFO 11280 --- [hospital-notification] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-04T17:02:32.086+05:30  INFO 11280 --- [hospital-notification] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1131 ms
+2025-06-04T17:02:32.282+05:30  INFO 11280 --- [hospital-notification] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-04T17:02:32.367+05:30  INFO 11280 --- [hospital-notification] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-04T17:02:32.406+05:30  INFO 11280 --- [hospital-notification] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-04T17:02:32.686+05:30  INFO 11280 --- [hospital-notification] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-04T17:02:32.719+05:30  INFO 11280 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-04T17:02:32.899+05:30  INFO 11280 --- [hospital-notification] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-06-04T17:02:32.900+05:30  INFO 11280 --- [hospital-notification] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-04T17:02:32.930+05:30  WARN 11280 --- [hospital-notification] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-04T17:02:32.950+05:30  INFO 11280 --- [hospital-notification] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-04T17:02:33.797+05:30  INFO 11280 --- [hospital-notification] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-04T17:02:33.894+05:30  INFO 11280 --- [hospital-notification] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T17:02:34.132+05:30  INFO 11280 --- [hospital-notification] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-04T17:02:35.040+05:30  WARN 11280 --- [hospital-notification] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-04T17:02:35.295+05:30  INFO 11280 --- [hospital-notification] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-06-04T17:02:35.390+05:30  INFO 11280 --- [hospital-notification] [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-06-04T17:02:35.449+05:30  INFO 11280 --- [hospital-notification] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-04T17:02:35.461+05:30  INFO 11280 --- [hospital-notification] [main] c.e.n.HospitalNotificationApplication    : Started HospitalNotificationApplication in 4.956 seconds (process running for 5.497)
+2025-06-04T17:02:35.466+05:30  INFO 11280 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Running hourly reminder job...
+2025-06-04T17:02:35.466+05:30 DEBUG 11280 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Fetching appointments between Wed Jun 04 17:02:35 IST 2025 and Wed Jun 04 18:02:35 IST 2025
+2025-06-04T17:02:35.572+05:30  INFO 11280 --- [hospital-notification] [scheduling-1] c.e.n.service.ReminderService            : Reminder job completed. Total reminders sent: 0
+2025-06-04T17:02:40.671+05:30  INFO 11280 --- [hospital-notification] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-04T17:02:40.671+05:30  INFO 11280 --- [hospital-notification] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-04T17:02:40.673+05:30  INFO 11280 --- [hospital-notification] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-04T17:03:30.070+05:30 ERROR 11280 --- [hospital-notification] [http-nio-8080-exec-5] c.e.n.service.AppointmentService         : Error modifying appointment: Appointment not found with ID: 1
+2025-06-04T17:04:25.784+05:30  INFO 11280 --- [hospital-notification] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-06-04T17:04:25.786+05:30  INFO 11280 --- [hospital-notification] [RMI TCP Connection(12)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-04T17:04:25.796+05:30  INFO 11280 --- [hospital-notification] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-04T17:04:25.801+05:30  INFO 11280 --- [hospital-notification] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-04T17:04:25.803+05:30  INFO 11280 --- [hospital-notification] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-04T17:04:25.806+05:30  INFO 11280 --- [hospital-notification] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
